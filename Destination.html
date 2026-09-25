@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/Destination.css">
+    <title>ChaloChale - App</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container-fluid">
+            <img src="Images/ChaloChale.png" alt="Logo">
+            <h2 class="navbar-brand fw-bold fs-1 text-warning">ChaloChale</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Destination.html">Destination</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Packages.html">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="About.html">About</a></li>
+                    <li class="nav-item"><a href="Login.html" class="btn btn-warning ms-2 active">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="destination-hero">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <span class="destination-badge">Curated escapes</span>
+                    <h1>Discover destinations that feel like stories worth telling.</h1>
+                    <p>From tropical shores and mountain trails to timeless cities and hidden escapes, ChaloChale brings together unforgettable journeys tailored to your travel style.</p>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="Packages.html" class="btn btn-primary btn-lg">Plan My Trip</a>
+                        <a href="Contact.html" class="btn btn-outline-light btn-lg">Talk to Expert</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-card shadow rounded">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Beach destination" class="img-fluid">
+                        <div class="hero-card-body text-center">
+                            <div>
+                                <small>Featured Escape</small>
+                                <h3>Bali Retreat</h3>
+                            </div>
+                            <span>5 Days / 4 Nights</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section mt-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <h3>120+</h3>
+                    <p>Destinations</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3>30k+</h3>
+                    <p>Happy Travelers</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3>4.8/5</h3>
+                    <p>Guest Rating</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3>24/7</h3>
+                    <p>Trip Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="section-heading text-center">
+            <span class="section-eyebrow">Popular destinations</span>
+            <h2>Choose the place that matches your mood</h2>
+            <p>Whether you are chasing sunsets, snow peaks, vibrant streets, or soulful culture, we have a getaway planned for you.</p>
+        </div>
+
+        <div class="row g-4" id="Card">
+            <div class="col-md-4">
+                <div class="card destination-card h-100">
+                    <img class="card-img-top" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Alps mountain destination">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="tag">Adventure</span>
+                            <span class="price">₹18,999</span>
+                        </div>
+                        <h4 class="card-title">Swiss Alps</h4>
+                        <p class="card-text">Snowy peaks, scenic trails, cozy chalets, and thrilling cable-car rides.</p>
+                        <ul class="destination-features">
+                            <li>6 days / 5 nights</li>
+                            <li>Mountain resort stay</li>
+                        </ul>
+                        <a href="Booking.html" class="btn btn-primary">Book This Trip</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card destination-card h-100">
+                    <img class="card-img-top" src="https://tse3.mm.bing.net/th/id/OIP.fDY3m-prbyL_vhL6563AGQHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bali beach destination">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="tag">Beach</span>
+                            <span class="price">₹16,499</span>
+                        </div>
+                        <h4 class="card-title">Bali Escape</h4>
+                        <p class="card-text">Golden beaches, emerald waters, wellness spas, and island sunsets to recharge.</p>
+                        <ul class="destination-features">
+                            <li>5 days / 4 nights</li>
+                            <li>Private island transfers</li>
+                        </ul>
+                        <a href="Booking.html" class="btn btn-primary">Book This Trip</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card destination-card h-100">
+                    <img class="card-img-top" src="https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=900&q=80" alt="Kyoto city destination">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="tag">Culture</span>
+                            <span class="price">₹21,299</span>
+                        </div>
+                        <h4 class="card-title">Kyoto Heritage</h4>
+                        <p class="card-text">Temple walks, tea houses, lantern-lit evenings, and authentic local cuisine.</p>
+                        <ul class="destination-features">
+                            <li>7 days / 6 nights</li>
+                            <li>Guided cultural tour</li>
+                        </ul>
+                        <a href="Booking.html" class="btn btn-primary">Book This Trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="section-eyebrow">Travel experience</span>
+                    <h2>Everything you need for a smooth getaway.</h2>
+                    <div class="list-group custom-list">
+                        <div class="list-group-item">
+                            <strong>Handpicked stays</strong>
+                            <p>Comfortable hotels, villas, and boutique resorts near the best attractions.</p>
+                        </div>
+                        <div class="list-group-item">
+                            <strong>Flexible itinerary</strong>
+                            <p>Choose from relaxed sightseeing, thrill-packed adventures, or immersive cultural trails.</p>
+                        </div>
+                        <div class="list-group-item">
+                            <strong>Friendly local support</strong>
+                            <p>Travel experts available before and during your journey for a stress-free experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="experience-box">
+                        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Travel planning">
+                        <div class="experience-overlay text-center">
+                            <h4>Best time to travel</h4>
+                            <p>Plan between October to March for smooth weather and comfortable sightseeing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-3">
+                <div class="mini-card text-center">
+                    <div class="mini-icon">🏝️</div>
+                    <h5>Beach Holidays</h5>
+                    <p>Sun-soaked escapes with crystal waters and luxury stays.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="mini-card text-center">
+                    <div class="mini-icon">⛰️</div>
+                    <h5>Mountain Trails</h5>
+                    <p>Adventure-packed routes with camps, viewpoints, and fresh air.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="mini-card text-center">
+                    <div class="mini-icon">🏛️</div>
+                    <h5>Heritage Tours</h5>
+                    <p>Explore forts, temples, and cultural landmarks with local guides.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="mini-card text-center">
+                    <div class="mini-icon">✨</div>
+                    <h5>Luxury Stays</h5>
+                    <p>High-end stays, exceptional dining, and memorable experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container text-center">
+            <span class="section-eyebrow text-white">Ready for your next chapter?</span>
+            <h2>Let us design a trip that feels personal and unforgettable.</h2>
+            <a href="Packages.html" class="btn btn-warning btn-lg mt-3">Explore Packages</a>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
