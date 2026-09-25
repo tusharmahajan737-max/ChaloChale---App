@@ -1,0 +1,356 @@
+:root {
+    --ink: #17324d;
+    --muted: #617487;
+    --sky: #edf8fb;
+    --teal: #087f8c;
+    --coral: #f4775c;
+    --navy: #10283d;
+    --shadow: 0 14px 35px rgba(23, 50, 77, 0.12);
+}
+
+body {
+    background: linear-gradient(180deg, #f7fbfb 0%, var(--sky) 100%);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.destination-hero {
+    background: linear-gradient(135deg, rgba(16, 40, 61, 0.92), rgba(8, 127, 140, 0.82));
+    color: white;
+    padding: 5rem 0;
+    border-radius: 0 0 28px 28px;
+    margin-top: 0;
+}
+
+.destination-badge {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.destination-hero h1 {
+    font-size: clamp(2.3rem, 5vw, 4.2rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+.destination-hero p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.08rem;
+    max-width: 570px;
+}
+
+.hero-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-card img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-card-body {
+    position: absolute;
+    left: 1.2rem;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 1rem 1.2rem;
+    border-radius: 16px;
+    background: rgba(16, 40, 61, 0.68);
+    backdrop-filter: blur(6px);
+}
+
+.hero-card-body small {
+    display: block;
+    color: #c5d7e6;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.hero-card-body h3 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero-card-body span {
+    color: #ffd166;
+    font-weight: 700;
+}
+
+.stats-section {
+    margin-top: -2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.stats-section .container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+    padding: 2rem 1rem;
+    box-shadow: var(--shadow);
+}
+
+.stats-section h3 {
+    margin-bottom: 0.3rem;
+    font-size: 2rem;
+    color: var(--teal);
+    font-weight: 800;
+}
+
+.stats-section p {
+    margin: 0;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.section-eyebrow {
+    margin-bottom: 0.6rem;
+    color: var(--coral);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.section-heading h2,
+.experience-section h2 {
+    margin-bottom: 0.8rem;
+    font-weight: 800;
+    color: var(--ink);
+}
+
+.section-heading p,
+.experience-section p,
+.destination-card .card-text,
+.mini-card p {
+    color: var(--muted);
+}
+
+#Card {
+    row-gap: 1.5rem;
+}
+
+.destination-card {
+    border: 0;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 42px rgba(23, 50, 77, 0.2);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.destination-card .card-body {
+    padding: 1.5rem;
+    border-radius: 0 0 22px 22px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(8, 127, 140, 0.12);
+    color: var(--teal);
+    font-size: 0.76rem;
+    font-weight: 700;
+}
+
+.price {
+    color: var(--coral);
+    font-weight: 800;
+}
+
+.destination-card .card-title {
+    color: var(--ink);
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+
+.destination-features {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 1.2rem;
+    color: var(--muted);
+    line-height: 1.9;
+}
+
+.destination-features li::before {
+    content: "✓ ";
+    color: var(--teal);
+    font-weight: 700;
+}
+
+.experience-section {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 4rem 0;
+}
+
+.custom-list {
+    border: none;
+    margin-top: 1.5rem;
+}
+
+.custom-list .list-group-item {
+    border-radius: 18px;
+    border: 1px solid rgba(8, 127, 140, 0.1);
+    box-shadow: var(--shadow);
+    background: rgba(255, 255, 255, 0.85);
+    margin-bottom: 1rem;
+    padding: 1.2rem 1.3rem;
+}
+
+.custom-list strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--ink);
+}
+
+.experience-box {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.experience-box img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+.experience-overlay {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    padding: 1.1rem 1.2rem;
+    border-radius: 16px;
+    background: rgba(16, 40, 61, 0.72);
+    color: white;
+}
+
+.experience-overlay h4 {
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+}
+
+.mini-card {
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: var(--shadow);
+    height: 100%;
+}
+
+.mini-icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.mini-card h5 {
+    color: var(--ink);
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, var(--navy), var(--teal));
+    padding: 4rem 0;
+    color: white;
+    border-radius: 28px 28px 0 0;
+}
+
+.cta-section h2 {
+    font-weight: 800;
+    margin-top: 0.5rem;
+}
+
+.btn-primary {
+    background: var(--coral);
+    border-color: var(--coral);
+    box-shadow: 0 6px 16px rgba(244, 119, 92, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: #dd674f;
+    border-color: #dd674f;
+}
+
+.btn-warning {
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .destination-hero {
+        padding-top: 4rem;
+    }
+    .hero-card img,
+    .experience-box img {
+        height: 340px;
+    }
+}
+
+@media (max-width: 767px) {
+    .destination-hero {
+        padding: 3.5rem 0;
+    }
+    .stats-section {
+        margin-top: 1rem;
+    }
+    .hero-card-body {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .destination-card img {
+        height: 220px;
+    }
+    .experience-box img {
+        height: 300px;
+    }
+}
